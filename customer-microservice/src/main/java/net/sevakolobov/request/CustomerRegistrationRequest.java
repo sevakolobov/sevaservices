@@ -1,10 +1,15 @@
 package net.sevakolobov.request;
 
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
 /**
  * @author sevakolobov on 01.06.2022.
  */
-public record CustomerRegistrationRequest(
-        String firstName,
-        String lastName,
-        String email) {
+@Data
+@NoArgsConstructor
+public class CustomerRegistrationRequest {
+        String firstName;
+        String lastName;
+        String email;
 }
